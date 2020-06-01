@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Calculos</h1>
-
-    <form action="">
-        <input type="button" value="IMC" onclick="selecionar();" />       
-        <input type="button" value="Velocidade" onclick="selecionar();" />
-        <input type="button" value="Consumo de gasolina" onclick="selecionar();" />
-        <input type="button" value="Calcular salario" onclick="selecionar();" />
-
-    </form>
-    <button id="btn_form" onclick="mostrarFormulario()">Mostrar imc</button>
-
-<form id="my_form">
-    <p>Peso: <input type="text" name="peso"></p>
-    <p>Altura: <input type="text" name="altura"></p>
-    <p><input type="submit" value="Calcular">
-    <input type="reset" value="Limpar"></p>
-    <p>Resultado:<input type="text" name="resultado"></p>
-</form>
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <script type="text/javascript">
    
-<script src="./js/script.js"></script>
+    </script>
+    <body>
+    <form action="imc.html">
+    <fieldset>
+        <select onchange="habilitaBtn()" id="opcao">
+            <option name="ativo" value="--"/> --</option>
+            <option name="ativo" value="IMC"/>IMC</option>
+            <option name="ativo" value="Velocidade"/>Velocida</option>
+            <option name="ativo" value="Consumo de Combustivel"/>Consumo de Combustivel</option>
+            <option name="ativo" value="Calcular Salario"/>Calcular Salario</option>
+        </select>
+        <button id="avancar" type="submit" class="btn btn-primary pull-right" >Avançar</button>
+    </fieldset>
+    </form>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
 </body>
 </html>
