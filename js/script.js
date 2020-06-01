@@ -3,10 +3,24 @@ function habilitaBtn () {
 
     if(op == "--")
     {
-        if(!document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=true;              
+        if(!document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=true;    
+              
     }
 
-    else if(op == "FUNCIONARIO1")
+    else if(op == "IMC")
+    {
+        if(document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=false;
+      
+    }
+    else if(op == "Velocidade")
+    {
+        if(document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=false;
+    }
+    else if(op == "Consumo de Combustivel")
+    {
+        if(document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=false;
+    }
+    else if(op == "Calcular Salario")
     {
         if(document.getElementById('avancar').disabled) document.getElementById('avancar').disabled=false;
     }
@@ -17,4 +31,4 @@ function CalculoImc(){
     var imc = peso/(altura*altura);
     document.formImc.resultado.value = imc.toFixed(2);
         
-    }
+    }   
